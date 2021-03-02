@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#navbar{
+	background: rgba(0,0,0,.8);
+	width:100%;
+	padding:10px 0;
+	position: fixed;
+	top: 0;
+	z-index: 443;
+}
+#nav{
+	list-style-type: none;
+	float:right;
+	margin-right:30px;
+}
+#nav li{
+	float: left;
+	padding-top:10px;
+}
+#nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: .5s ease;
+}
+#nav li a:hover{
+	animation: navanimationfull 3s infinite linear;
+}
+
+@keyframes navanimationfull{
+	0%{color: hotpink;}
+	25%{color: crimson;}
+	50%{color: darkorange;}
+	75%{color: crimson;}
+	100%{color:hotpink;}
+}
+#logo{
+	color:white;
+	margin: 50px;
+	font-size: 30px;
+	text-decoration: none;
+	transition: 1s ease;
+}
+#logo img{
+	transition: 1s ease;
+}
+#logo img:hover{
+	transform: rotateZ(360deg);
+}
+
+
+#toggle{
+	display: none;
+	z-index: 777;
+}
+
+#background{
+	width:100%;
+	height: 100%;
+	background: black;
+}
+#bckimage{
+	margin: 20% 0;
+	width: 75%;
+	transition: .5s ease;
+}
+#bckimage:hover{
+	transform: scale(1.1);
+}
+#bck-pb{
+	position: relative;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+#bck-pb button{
+	background: linear-gradient(90deg,hotpink,indigo);
+	color: white;
+	padding: 3% 10%;
+	border: 1px solid black;
+	outline: none;
+	border-radius: 20px;
+	transition: .5s ease;
+}
+#bck-pb button:hover{
+	animation: bckbtn 2s linear infinite;
+	font-size: 16px;
+	letter-spacing: 5px;
+}
+@keyframes bckbtn{
+	0%{background: transparent;border: 1px solid indigo;transform: rotateZ(0deg);}
+	25%{background: transparent;border: 1px solid hotpink;transform: rotateZ(10deg);}
+	20%{background: transparent;border: 1px solid crimson;transform: rotateZ(0deg);}
+	75%{background: transparent;border: 1px solid hotpink;transform: rotateZ(-10deg);}
+	100%{background: transparent;border: 1px solid indigo;transform: rotateZ(0deg);}
+}
+
+#bck-pb p{
+	font-size: 5vw;
+}
+
+@media (max-width: 750px){
+	#bckimage{
+		width: 60%;
+	}
+	#navbar{
+		text-align: center;
+	}
+	#logo{
+		width:100%;
+		clear: both;
+		margin: 0;
+		padding: 0;
+	}
+	#nav{
+		float:left;
+		text-align: center;
+		width: 100%;
+		margin: 20px 0 0 0;
+		padding: 0;
+	}
+	#nav li{
+		float: left;
+		display:block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		padding: 10px 0;
+		transition: .5s ease;
+		cursor: pointer;
+	}
+	#nav li:hover{
+		animation: navanimation 5s infinite linear;
+	}
+	@keyframes navanimation{
+		0%{background: hotpink}
+		25%{background: crimson}
+		50%{background: darkorange}
+		75%{background: crimson}
+		100%{background: hotpink}
+	}
+	#nav li a:hover{
+		color: white;
+		animation: none;
+	}
+	#toggle{
+		display: block;
+		position: fixed;
+		right: 0;
+		z-index: 34;
+		margin-right:20px;
+		margin-top:20px;
+		background: transparent;
+		color: crimson;
+		border-radius: 5px;
+		border: none;
+		outline: none;
+		z-index: 999;
+	}
+
+	
+}
