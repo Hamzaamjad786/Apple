@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+	scroll-behavior: smooth;
+}
+
 #navbar{
 	background: rgba(0,0,0,.8);
 	width:100%;
@@ -162,4 +166,33 @@
 	}
 
 	
+}
+
+
+.ml9 {
+  margin-top:5%;
+  color:white;
+  position: relative;
+  font-weight: 200;
+  font-size: 7vw;
+ 
+}
+.ml9 .letter:hover{
+	color: crimson;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+  color:white;
 }

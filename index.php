@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" href="Apple5.css">
+	<link rel="stylesheet" href="Apple6.css">
 	<link rel="shortcut icon" href="Images/logo1.png">
 </head>
 <?php
@@ -21,12 +21,22 @@ $navbar->Create();
 		</div>	
 		<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-center">
 			<div id="bck-pb" class="pb-5 pt-5">
-				<p class="text-white">iPhone 12 Pro Max</p>
+				<h1 class="ml9" style="text-align: center;">
+  					<span class="text-wrapper">
+   					 <span class="letters">iPhone 12 Pro Max</span><br>
+  					</span>
+				</h1>
 				<button>Buy Now</button>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+<script src="Libraries/anime.min.js"></script>
+<script src="Libraries/Apple.js"></script>
+
 
 
 
