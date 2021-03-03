@@ -66,6 +66,7 @@ html{
 	height: 100%;
 	background: black;
 }
+
 #bckimage{
 	margin: 20% 0;
 	width: 75%;
@@ -195,4 +196,34 @@ html{
   display: inline-block;
   line-height: 1em;
   color:white;
+}
+
+#spec{
+	background: linear-gradient(90deg,crimson,red,crimson);
+	color: white;
+	text-align: center;
+	font-size: 5vw;
+	width: 100%;
+	padding:3% 0;
+	transition: 0.8s ease;
+}
+#spec:hover{
+	background: linear-gradient(90deg,crimson,black,crimson);
+	color: transparent;
+	-webkit-background-clip: text;
+	letter-spacing: 3px;
+}
+#spec-box{
+	background: url("Images/spec.jpg") fixed no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+#spec-box:after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.90);
+	top: 0;
+	left: 0;
 }

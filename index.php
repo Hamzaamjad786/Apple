@@ -33,6 +33,20 @@ $navbar->Create();
 </div>
 
 
+<div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" id="spec">
+
+	SPECIFICATIONS
+</div>
+
+<div id="spec-box" data-aos="fade-up"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="container-fluid">
+     <br>
+     <br>
+     <br>
+</div>
 
 <script src="Libraries/anime.min.js"></script>
 <script src="Libraries/Apple.js"></script>
