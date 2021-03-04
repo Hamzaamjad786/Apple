@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" href="Apple6.css">
+	<link rel="stylesheet" href="Apple7.css">
 	<link rel="shortcut icon" href="Images/logo1.png">
 </head>
 <?php
@@ -40,12 +40,20 @@ $navbar->Create();
 	SPECIFICATIONS
 </div>
 
-<div id="spec-box" data-aos="fade-up"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="container-fluid">
-     <br>
-     <br>
-     <br>
+<div id="spec-box" class="container-fluid mt-5">
+     <div class="row">
+     		<div data-aos="fade-up" data-aos-duration="1000" class="text-center col-xl-6 col-lg-6 col-md-6 col-sm-12" id="spec-price">
+     			<h1 style="font-size: 5vw">Starting Price</h1>
+				<h2 style="font-size: 10vw;">$999+</h2>
+				<p>Buy directly from Apple</p>
+     		</div>
+     		<div data-aos="fade-down" data-aos-duration="1000" class="text-center col-xl-6 col-lg-6 col-md-6 col-sm-12">
+     			<img src="Images/Spec-Image.png" id="spec-image">
+     		</div>
+     </div>
+</div>
+
+<div style="height: 100vh">
 </div>
 
 <script src="Libraries/anime.min.js"></script>
